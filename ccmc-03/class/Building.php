@@ -1,14 +1,14 @@
 <?php
 class Building{
     //properties
-    private $name;
-    private $height;
-    
+    protected $name;
+    protected $height;
+   
     //constractor
     function __construct($name, $height){
         $this->name = $name;
         $this->height = $height;
-        
+       
     }
     //accessor method
     function setName($name){
