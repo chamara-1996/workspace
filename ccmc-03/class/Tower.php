@@ -2,28 +2,28 @@
 require_once("Building.php");
 ?>
 <?php
-class tower extends building {
+class Tower extends Building {
     //属性
-    private $builtyear;
+    private $builtYear;
    
     //コンストラクタ
-    function __construct($name, $height, $builtyear) {
+    function __construct($name, $height, $builtYear){
         parent::__construct($name, $height);
-        $this->builtyear = $builtyear;
+        $this->builtYear = $builtYear;
     }
    
     //アクセッサメソッド
-    function setBuiltyear($year) {
-        $this->builtyear = $years;
+    function setBuiltYear($year){
+        $this->BuiltYear = $year;
     }
-    function getbuiltyear() {
-        return $this-> builtyear;
-    }
+    function getBuiltYear(){
    
-    //メソッド
-    function getprofile() {
-        $profile = "{$this->name}の高さは{$this->height}mで、{$this->builtyear}年に開業しました.";
-        return $profile;
+    return $this->builtYear;
     }
+   //メソッド
+   function getprofile(){
+       $profile = "{$this->name}の高さは{$this->height} mで{$this->builtYear}年に開業しました。";
+       return $profile;
+   }
 }
 ?>

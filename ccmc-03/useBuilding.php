@@ -1,12 +1,13 @@
 <?php
-require_once("class/building.php");
-
-$kasumigaseki = new Building ("霞が関ビル", 147);
-echo "<pre>";
-var_dump($kasumigaseki);
+require_once("class/Building.php");
+$kasmigaseki = new Building("霞ヶ関ビル",147);
+echo"<pre>";
+var_dump($kasmigaseki);
 echo "</pre>";
 exit(0);
 ?>
+
+<!DOCTYPE html>
 <html lang="ja">
 
 <head>
